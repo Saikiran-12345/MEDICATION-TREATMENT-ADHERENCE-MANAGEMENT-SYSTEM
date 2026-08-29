@@ -27,7 +27,7 @@ export function isRequired(value: unknown): boolean {
  * Validate email address.
  */
 export function isEmail(value: string): boolean {
-  if (!value) return false;
+  if (!value) return true;
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return emailRegex.test(value);
 }
@@ -36,7 +36,7 @@ export function isEmail(value: string): boolean {
  * Validate telephone numbers (10 digits minimum, optional symbols).
  */
 export function isPhone(value: string): boolean {
-  if (!value) return false;
+  if (!value) return true;
   const cleanPhone = value.replace(/\D/g, '');
   return cleanPhone.length >= 10 && cleanPhone.length <= 15;
 }
@@ -45,7 +45,7 @@ export function isPhone(value: string): boolean {
  * Validate URL.
  */
 export function isUrl(value: string): boolean {
-  if (!value) return false;
+  if (!value) return true;
   try {
     new URL(value);
     return true;
