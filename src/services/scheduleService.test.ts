@@ -10,13 +10,13 @@ describe('scheduleService', () => {
 
   it('should return all default schedules', () => {
     const list = scheduleService.getAll();
-    expect(list.length).toBe(8);
+    expect(list.length).toBe(120);
     expect(list[0].id).toBe('sched-1');
   });
 
   it('should find schedules by treatment ID', () => {
     const list = scheduleService.getByTreatmentId('treat-1');
-    expect(list.length).toBe(2);
+    expect(list.length).toBe(3);
     expect(list[0].medicationId).toBe('med-1');
   });
 

@@ -9,7 +9,7 @@ describe('medicationService', () => {
 
   it('should return all default medications', () => {
     const list = medicationService.getAll();
-    expect(list.length).toBe(9);
+    expect(list.length).toBe(80);
     expect(list[0].name).toBe('Lisinopril');
   });
 
@@ -34,7 +34,7 @@ describe('medicationService', () => {
 
     expect(med.id).toBeDefined();
     expect(medicationService.getById(med.id)).toBeDefined();
-    expect(medicationService.getAll().length).toBe(10);
+    expect(medicationService.getAll().length).toBe(81);
   });
 
   it('should enforce date validation: endDate cannot precede startDate', () => {

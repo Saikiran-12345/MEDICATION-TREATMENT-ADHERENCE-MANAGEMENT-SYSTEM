@@ -1,5 +1,6 @@
 import { storageService } from './storageService';
 import { KEYS, dbService } from './dbService';
+import { treatmentService } from './treatmentService';
 import type { Medication } from '../types';
 
 export const medicationService = {
@@ -13,6 +14,11 @@ export const medicationService = {
 
   getByTreatmentId(treatmentId: string): Medication[] {
     return this.getAll().filter((m) => m.treatmentId === treatmentId);
+  },
+
+  getByPatientId(patientId: string): Medication[] {
+    const treatmentIds = treatmentService.getByPatientId(patientId).map(t => t.id);
+    return this.getAll().filter(m => treatmentIds.includes(m.treatmentId));
   },
 
   create(medicationData: Omit<Medication, 'id'>): Medication {

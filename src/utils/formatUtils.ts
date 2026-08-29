@@ -9,7 +9,7 @@
  */
 export function formatNumber(num: number, decimals: number = 0): string {
   if (num === null || num === undefined || isNaN(num)) return '';
-  return num.toLocaleString(undefined, {
+  return num.toLocaleString('en-US', {
     minimumFractionDigits: decimals,
     maximumFractionDigits: decimals,
   });

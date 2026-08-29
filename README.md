@@ -1,32 +1,75 @@
-# React + TypeScript + Vite
+# Medication & Treatment Adherence Management System (MTAMS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Overview
+MTAMS is a comprehensive clinical dashboard for managing patient medications, treatments, vitals, symptoms, and more. Designed for educational and demonstration purposes, this local-first application provides a complete interface for healthcare professionals and patients.
 
-Currently, two official plugins are available:
+## Disclaimer
+**MEDICAL DISCLAIMER:** This application is for demonstration and educational purposes ONLY. It is NOT a substitute for professional medical advice, diagnosis, or treatment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Patient Management & Profiles
+- Medication & Prescription Tracking
+- Vitals Monitoring
+- Symptom & Side Effect Logging
+- Appointment Scheduling
+- Pharmacy Inventory
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-## Expanding the Oxlint configuration
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Saikiran-12345/MEDICATION-TREATMENT-ADHERENCE-MANAGEMENT-SYSTEM.git
+   cd MEDICATION-TREATMENT-ADHERENCE-MANAGEMENT-SYSTEM
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Build and Run
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+### Development Server
+To start the Vite development server:
+```bash
+npm run dev
+```
+The application will be available at `http://localhost:5173/`.
+
+### Production Build
+To create a production build:
+```bash
+npm run build
+```
+To preview the production build:
+```bash
+npm run preview
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Docker
+You can also run the application using Docker:
+```bash
+docker build -t mtams-app .
+docker run -p 8080:80 mtams-app
+```
+
+## Usage
+Login using the following demo credentials:
+- **Admin**: `admin` / `admin123`
+- **Healthcare Staff**: `staff` / `staff123`
+- **Patient**: `patient` / `patient123`
+
+## Dependencies
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Recharts
+- Lucide React
+
+All dependencies are tracked in `package.json` and `package-lock.json`.

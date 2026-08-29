@@ -9,7 +9,7 @@ describe('treatmentService', () => {
 
   it('should list all default treatments', () => {
     const list = treatmentService.getAll();
-    expect(list.length).toBe(10);
+    expect(list.length).toBe(100);
     expect(list[0].name).toBe('Hypertension Control Plan');
   });
 
@@ -38,7 +38,7 @@ describe('treatmentService', () => {
 
     expect(treat.id).toBeDefined();
     expect(treatmentService.getById(treat.id)).toBeDefined();
-    expect(treatmentService.getAll().length).toBe(11);
+    expect(treatmentService.getAll().length).toBe(101);
   });
 
   it('should enforce date validation: endDate cannot precede startDate', () => {
