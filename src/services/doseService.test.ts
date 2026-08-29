@@ -10,7 +10,7 @@ describe('doseService', () => {
 
   it('should return initial doses', () => {
     const list = doseService.getAll();
-    expect(list.length).toBe(18);
+    expect(list.length).toBe(573);
     expect(list[0].id).toBe('dose-1');
   });
 

@@ -10,7 +10,7 @@ describe('patientService', () => {
 
   it('should list all initial synthetic patients', () => {
     const list = patientService.getAll();
-    expect(list.length).toBe(10);
+    expect(list.length).toBe(150);
     expect(list[0].name).toBe('John Doe');
   });
 
@@ -41,7 +41,7 @@ describe('patientService', () => {
     const saved = patientService.getById(newPat.id);
     expect(saved).toBeDefined();
     expect(saved?.name).toBe('Bruce Wayne');
-    expect(patientService.getAll().length).toBe(11);
+    expect(patientService.getAll().length).toBe(151);
   });
 
   it('should fail registration with invalid age or empty name', () => {
@@ -82,6 +82,6 @@ describe('patientService', () => {
   it('should delete a patient profile', () => {
     patientService.delete('pat-1');
     expect(patientService.getById('pat-1')).toBeUndefined();
-    expect(patientService.getAll().length).toBe(9);
+    expect(patientService.getAll().length).toBe(149);
   });
 });
