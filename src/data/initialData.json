@@ -1,0 +1,731 @@
+{
+  "patients": [
+    {
+      "id": "pat-1",
+      "name": "John Doe",
+      "age": 45,
+      "gender": "Male",
+      "contactInfo": {
+        "phone": "+1 (555) 123-4567",
+        "email": "john.doe@example.com",
+        "address": "742 Evergreen Terrace, Springfield"
+      },
+      "registrationDate": "2026-08-01",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pat-2",
+      "name": "Jane Smith",
+      "age": 62,
+      "gender": "Female",
+      "contactInfo": {
+        "phone": "+1 (555) 987-6543",
+        "email": "jane.smith@example.com",
+        "address": "101 Maple Street, Riverdale"
+      },
+      "registrationDate": "2026-07-15",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pat-3",
+      "name": "Robert Johnson",
+      "age": 29,
+      "gender": "Male",
+      "contactInfo": {
+        "phone": "+1 (555) 555-5555",
+        "email": "robert.j@example.com",
+        "address": "555 Oak Lane, Metropolis"
+      },
+      "registrationDate": "2026-08-20",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pat-4",
+      "name": "Alice Williams",
+      "age": 70,
+      "gender": "Female",
+      "contactInfo": {
+        "phone": "+1 (555) 444-3322",
+        "email": "alice.w@example.com",
+        "address": "12 Pine Rd, Sun City"
+      },
+      "registrationDate": "2025-08-01",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pat-5",
+      "name": "Michael Brown",
+      "age": 55,
+      "gender": "Male",
+      "contactInfo": {
+        "phone": "+1 (555) 111-2222",
+        "email": "michael.b@example.com",
+        "address": "908 Elm St, Gotham"
+      },
+      "registrationDate": "2026-08-10",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pat-6",
+      "name": "Emily Davis",
+      "age": 38,
+      "gender": "Female",
+      "contactInfo": {
+        "phone": "+1 (555) 333-4444",
+        "email": "emily.d@example.com",
+        "address": "404 Cedar St, Star City"
+      },
+      "registrationDate": "2026-01-01",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pat-7",
+      "name": "William Wilson",
+      "age": 50,
+      "gender": "Male",
+      "contactInfo": {
+        "phone": "+1 (555) 222-3333",
+        "email": "william.w@example.com",
+        "address": "303 Walnut Ave, Central City"
+      },
+      "registrationDate": "2026-05-01",
+      "assignedStaffId": "staff-1",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "pat-8",
+      "name": "Donna Taylor",
+      "age": 67,
+      "gender": "Female",
+      "contactInfo": {
+        "phone": "+1 (555) 666-7777",
+        "email": "donna.t@example.com",
+        "address": "123 Cherry Lane, Hill Valley"
+      },
+      "registrationDate": "2026-06-01",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pat-9",
+      "name": "James Anderson",
+      "age": 72,
+      "gender": "Male",
+      "contactInfo": {
+        "phone": "+1 (555) 888-9999",
+        "email": "james.a@example.com",
+        "address": "456 Birch Rd, Twin Peaks"
+      },
+      "registrationDate": "2026-07-01",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pat-10",
+      "name": "Patricia Thomas",
+      "age": 48,
+      "gender": "Female",
+      "contactInfo": {
+        "phone": "+1 (555) 777-8888",
+        "email": "patricia.t@example.com",
+        "address": "789 Ash Ave, Sunnydale"
+      },
+      "registrationDate": "2026-08-05",
+      "assignedStaffId": "staff-1",
+      "status": "ACTIVE"
+    }
+  ],
+  "treatments": [
+    {
+      "id": "treat-1",
+      "patientId": "pat-1",
+      "name": "Hypertension Control Plan",
+      "startDate": "2026-08-01",
+      "endDate": "2026-11-01",
+      "status": "ACTIVE",
+      "notes": "Monitor BP twice daily. Aim for systolic < 130.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-2",
+      "patientId": "pat-2",
+      "name": "Glycemic Regulation Protocol",
+      "startDate": "2026-07-15",
+      "endDate": "2026-10-15",
+      "status": "ACTIVE",
+      "notes": "Target HbA1c < 7.0%. Log pre-meal glucose.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-3",
+      "patientId": "pat-3",
+      "name": "Asthma Management Program",
+      "startDate": "2026-09-01",
+      "endDate": "2027-03-01",
+      "status": "PLANNED",
+      "notes": "Maintenance inhaler daily. Rescue inhaler as needed.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-4",
+      "patientId": "pat-4",
+      "name": "Bone Density Therapy",
+      "startDate": "2025-08-01",
+      "endDate": "2026-08-01",
+      "status": "COMPLETED",
+      "notes": "Post-menopausal osteoporosis support course.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-5",
+      "patientId": "pat-5",
+      "name": "Lipid Management Plan",
+      "startDate": "2026-08-10",
+      "endDate": "2026-12-10",
+      "status": "ACTIVE",
+      "notes": "Repeat lipid profile in 3 months. Low cholesterol diet.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-6",
+      "patientId": "pat-6",
+      "name": "Thyroid Hormone Replacement",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "status": "ACTIVE",
+      "notes": "Take hormone levothyroxine strictly on an empty stomach in the morning.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-7",
+      "patientId": "pat-7",
+      "name": "Cardiovascular Rehab Therapy",
+      "startDate": "2026-05-01",
+      "endDate": "2026-11-01",
+      "status": "PAUSED",
+      "notes": "Paused due to temporary surgical event.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-8",
+      "patientId": "pat-8",
+      "name": "RA DMARD Therapy",
+      "startDate": "2026-06-01",
+      "endDate": "2026-12-01",
+      "status": "ACTIVE",
+      "notes": "Weekly immunosuppressive dosing schedule.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-9",
+      "patientId": "pat-9",
+      "name": "CHF Beta-Blocker Protocol",
+      "startDate": "2026-07-01",
+      "endDate": "2026-12-31",
+      "status": "ACTIVE",
+      "notes": "Monitor daily weights. Alert staff if weight increases by >3 lbs in 24h.",
+      "assignedStaffId": "staff-1"
+    },
+    {
+      "id": "treat-10",
+      "patientId": "pat-10",
+      "name": "MDD Antidepressant Trial",
+      "startDate": "2026-08-05",
+      "endDate": "2026-11-05",
+      "status": "ACTIVE",
+      "notes": "Observe mood improvements and check for side effects at 4 weeks.",
+      "assignedStaffId": "staff-1"
+    }
+  ],
+  "medications": [
+    {
+      "id": "med-1",
+      "name": "Lisinopril",
+      "treatmentId": "treat-1",
+      "dosage": "10mg",
+      "instructions": "Take once daily in the morning",
+      "startDate": "2026-08-01",
+      "endDate": "2026-11-01",
+      "status": "ACTIVE",
+      "notes": "Ace inhibitor for BP management"
+    },
+    {
+      "id": "med-2",
+      "name": "Amlodipine",
+      "treatmentId": "treat-1",
+      "dosage": "5mg",
+      "instructions": "Take once daily at bedtime",
+      "startDate": "2026-08-01",
+      "endDate": "2026-11-01",
+      "status": "ACTIVE",
+      "notes": "Calcium channel blocker"
+    },
+    {
+      "id": "med-3",
+      "name": "Metformin",
+      "treatmentId": "treat-2",
+      "dosage": "500mg",
+      "instructions": "Take twice daily with meals (morning/night)",
+      "startDate": "2026-07-15",
+      "endDate": "2026-10-15",
+      "status": "ACTIVE",
+      "notes": "First-line oral diabetes control"
+    },
+    {
+      "id": "med-4",
+      "name": "Fluticasone Inhaler",
+      "treatmentId": "treat-3",
+      "dosage": "110mcg",
+      "instructions": "Inhale 2 puffs twice daily",
+      "startDate": "2026-09-01",
+      "endDate": "2027-03-01",
+      "status": "ACTIVE",
+      "notes": "Maintenance steroid inhaler"
+    },
+    {
+      "id": "med-5",
+      "name": "Atorvastatin",
+      "treatmentId": "treat-5",
+      "dosage": "20mg",
+      "instructions": "Take once daily at night",
+      "startDate": "2026-08-10",
+      "endDate": "2026-12-10",
+      "status": "ACTIVE",
+      "notes": "Cholesterol-lowering statin"
+    },
+    {
+      "id": "med-6",
+      "name": "Levothyroxine",
+      "treatmentId": "treat-6",
+      "dosage": "75mcg",
+      "instructions": "Take once daily in the morning 30 mins before food",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "status": "ACTIVE",
+      "notes": "Thyroid hormone supplement"
+    },
+    {
+      "id": "med-7",
+      "name": "Methotrexate",
+      "treatmentId": "treat-8",
+      "dosage": "15mg",
+      "instructions": "Take once weekly on Monday morning",
+      "startDate": "2026-06-01",
+      "endDate": "2026-12-01",
+      "status": "ACTIVE",
+      "notes": "Folic acid supplement is required on Tuesdays"
+    },
+    {
+      "id": "med-8",
+      "name": "Carvedilol",
+      "treatmentId": "treat-9",
+      "dosage": "6.25mg",
+      "instructions": "Take twice daily with food (morning/night)",
+      "startDate": "2026-07-01",
+      "endDate": "2026-12-31",
+      "status": "ACTIVE",
+      "notes": "Beta blocker for cardiac protection"
+    },
+    {
+      "id": "med-9",
+      "name": "Sertraline",
+      "treatmentId": "treat-10",
+      "dosage": "50mg",
+      "instructions": "Take once daily in the morning with water",
+      "startDate": "2026-08-05",
+      "endDate": "2026-11-05",
+      "status": "ACTIVE",
+      "notes": "SSRI antidepressant"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "sched-1",
+      "treatmentId": "treat-1",
+      "medicationId": "med-1",
+      "patientId": "pat-1",
+      "startDate": "2026-08-01",
+      "endDate": "2026-11-01",
+      "time": "08:00",
+      "frequency": "ONCE_DAILY",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sched-2",
+      "treatmentId": "treat-1",
+      "medicationId": "med-2",
+      "patientId": "pat-1",
+      "startDate": "2026-08-01",
+      "endDate": "2026-11-01",
+      "time": "21:00",
+      "frequency": "ONCE_DAILY",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sched-3",
+      "treatmentId": "treat-2",
+      "medicationId": "med-3",
+      "patientId": "pat-2",
+      "startDate": "2026-07-15",
+      "endDate": "2026-10-15",
+      "time": "08:00, 20:00",
+      "frequency": "TWICE_DAILY",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sched-4",
+      "treatmentId": "treat-5",
+      "medicationId": "med-5",
+      "patientId": "pat-5",
+      "startDate": "2026-08-10",
+      "endDate": "2026-12-10",
+      "time": "21:00",
+      "frequency": "ONCE_DAILY",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sched-5",
+      "treatmentId": "treat-6",
+      "medicationId": "med-6",
+      "patientId": "pat-6",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "time": "07:00",
+      "frequency": "ONCE_DAILY",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sched-6",
+      "treatmentId": "treat-8",
+      "medicationId": "med-7",
+      "patientId": "pat-8",
+      "startDate": "2026-06-01",
+      "endDate": "2026-12-01",
+      "time": "08:00",
+      "frequency": "CUSTOM",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sched-7",
+      "treatmentId": "treat-9",
+      "medicationId": "med-8",
+      "patientId": "pat-9",
+      "startDate": "2026-07-01",
+      "endDate": "2026-12-31",
+      "time": "08:00, 20:00",
+      "frequency": "TWICE_DAILY",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sched-8",
+      "treatmentId": "treat-10",
+      "medicationId": "med-9",
+      "patientId": "pat-10",
+      "startDate": "2026-08-05",
+      "endDate": "2026-11-05",
+      "time": "08:00",
+      "frequency": "ONCE_DAILY",
+      "status": "ACTIVE"
+    }
+  ],
+  "doses": [
+    {
+      "id": "dose-1",
+      "scheduleId": "sched-1",
+      "medicationId": "med-1",
+      "treatmentId": "treat-1",
+      "patientId": "pat-1",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "08:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-28 08:15"
+    },
+    {
+      "id": "dose-2",
+      "scheduleId": "sched-2",
+      "medicationId": "med-2",
+      "treatmentId": "treat-1",
+      "patientId": "pat-1",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "21:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-28 21:05"
+    },
+    {
+      "id": "dose-3",
+      "scheduleId": "sched-1",
+      "medicationId": "med-1",
+      "treatmentId": "treat-1",
+      "patientId": "pat-1",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "08:00",
+      "status": "MISSED",
+      "reasonForMissed": "FORGOT",
+      "reasonNote": "Forgot morning pills because rushed to work."
+    },
+    {
+      "id": "dose-4",
+      "scheduleId": "sched-2",
+      "medicationId": "med-2",
+      "treatmentId": "treat-1",
+      "patientId": "pat-1",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "21:00",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "dose-5",
+      "scheduleId": "sched-3",
+      "medicationId": "med-3",
+      "treatmentId": "treat-2",
+      "patientId": "pat-2",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "08:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-28 08:30"
+    },
+    {
+      "id": "dose-6",
+      "scheduleId": "sched-3",
+      "medicationId": "med-3",
+      "treatmentId": "treat-2",
+      "patientId": "pat-2",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "20:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-28 20:10"
+    },
+    {
+      "id": "dose-7",
+      "scheduleId": "sched-3",
+      "medicationId": "med-3",
+      "treatmentId": "treat-2",
+      "patientId": "pat-2",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "08:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-29 08:05"
+    },
+    {
+      "id": "dose-8",
+      "scheduleId": "sched-3",
+      "medicationId": "med-3",
+      "treatmentId": "treat-2",
+      "patientId": "pat-2",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "20:00",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "dose-9",
+      "scheduleId": "sched-4",
+      "medicationId": "med-5",
+      "treatmentId": "treat-5",
+      "patientId": "pat-5",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "21:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-28 21:30"
+    },
+    {
+      "id": "dose-10",
+      "scheduleId": "sched-4",
+      "medicationId": "med-5",
+      "treatmentId": "treat-5",
+      "patientId": "pat-5",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "21:00",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "dose-11",
+      "scheduleId": "sched-5",
+      "medicationId": "med-6",
+      "treatmentId": "treat-6",
+      "patientId": "pat-6",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "07:00",
+      "status": "SKIPPED",
+      "reasonForMissed": "UNAVAILABLE",
+      "reasonNote": "Forgot refill prescription."
+    },
+    {
+      "id": "dose-12",
+      "scheduleId": "sched-5",
+      "medicationId": "med-6",
+      "treatmentId": "treat-6",
+      "patientId": "pat-6",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "07:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-29 07:15"
+    },
+    {
+      "id": "dose-13",
+      "scheduleId": "sched-7",
+      "medicationId": "med-8",
+      "treatmentId": "treat-9",
+      "patientId": "pat-9",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "08:00",
+      "status": "MISSED",
+      "reasonForMissed": "TRAVEL",
+      "reasonNote": "Flying, medication was in checked baggage."
+    },
+    {
+      "id": "dose-14",
+      "scheduleId": "sched-7",
+      "medicationId": "med-8",
+      "treatmentId": "treat-9",
+      "patientId": "pat-9",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "20:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-28 20:00"
+    },
+    {
+      "id": "dose-15",
+      "scheduleId": "sched-7",
+      "medicationId": "med-8",
+      "treatmentId": "treat-9",
+      "patientId": "pat-9",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "08:00",
+      "status": "MISSED",
+      "reasonForMissed": "FORGOT",
+      "reasonNote": "Woke up late, forgot the dose."
+    },
+    {
+      "id": "dose-16",
+      "scheduleId": "sched-7",
+      "medicationId": "med-8",
+      "treatmentId": "treat-9",
+      "patientId": "pat-9",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "20:00",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "dose-17",
+      "scheduleId": "sched-8",
+      "medicationId": "med-9",
+      "treatmentId": "treat-10",
+      "patientId": "pat-10",
+      "scheduledDate": "2026-08-28",
+      "scheduledTime": "08:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-28 08:05"
+    },
+    {
+      "id": "dose-18",
+      "scheduleId": "sched-8",
+      "medicationId": "med-9",
+      "treatmentId": "treat-10",
+      "patientId": "pat-10",
+      "scheduledDate": "2026-08-29",
+      "scheduledTime": "08:00",
+      "status": "TAKEN",
+      "actualTimeTaken": "2026-08-29 08:00"
+    }
+  ],
+  "followUps": [
+    {
+      "id": "fup-1",
+      "patientId": "pat-1",
+      "staffId": "staff-1",
+      "date": "2026-09-02",
+      "time": "10:30",
+      "purpose": "Routine BP Check & dosage tolerance review.",
+      "status": "SCHEDULED",
+      "notes": "Check for complaints of dry cough."
+    },
+    {
+      "id": "fup-2",
+      "patientId": "pat-2",
+      "staffId": "staff-1",
+      "date": "2026-09-05",
+      "time": "14:00",
+      "purpose": "A1C review and Metformin tolerance assessment.",
+      "status": "SCHEDULED",
+      "notes": "Verify log entries for pre-meal values."
+    },
+    {
+      "id": "fup-3",
+      "patientId": "pat-9",
+      "staffId": "staff-1",
+      "date": "2026-08-27",
+      "time": "11:00",
+      "purpose": "Post-acute cardiac follow-up.",
+      "status": "COMPLETED",
+      "notes": "Patient reports stable weight. Beta blocker titration looks correct."
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "patientId": "pat-1",
+      "treatmentId": "treat-1",
+      "authorId": "staff-1",
+      "authorName": "Dr. Sarah Jenkins",
+      "date": "2026-08-15T10:00:00.000Z",
+      "content": "Patient reports minor morning fatigue but generally adapting well to Lisinopril. BP today is 135/84. Discussed maintaining a sodium restriction.",
+      "category": "FOLLOW_UP"
+    },
+    {
+      "id": "note-2",
+      "patientId": "pat-9",
+      "treatmentId": "treat-9",
+      "authorId": "staff-1",
+      "authorName": "Dr. Sarah Jenkins",
+      "date": "2026-08-28T16:30:00.000Z",
+      "content": "Adherence has slipped to 50% over the last few days due to forgotten morning doses and travel disruption. Re-educated patient on utilizing pill organizers.",
+      "category": "ADHERENCE"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "staff-1",
+      "title": "Adherence Alert: James Anderson",
+      "message": "Patient James Anderson has missed 2 consecutive doses of Carvedilol.",
+      "date": "2026-08-29T08:30:00.000Z",
+      "type": "MISSED_DOSE",
+      "isRead": false
+    },
+    {
+      "id": "notif-2",
+      "userId": "patient-1",
+      "title": "Upcoming Follow-up",
+      "message": "You have a scheduled checkin with Dr. Sarah Jenkins on 2026-09-02 at 10:30.",
+      "date": "2026-08-29T10:00:00.000Z",
+      "type": "FOLLOW_UP",
+      "isRead": false
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "log-1",
+      "userId": "admin-1",
+      "username": "admin",
+      "action": "DATA_INITIALIZED",
+      "timestamp": "2026-08-29T11:50:00.000Z",
+      "details": "Synthetic demo data loaded on clean launch"
+    }
+  ],
+  "settings": {
+    "theme": "light",
+    "enableNotifications": true,
+    "dashboardPreferences": {
+      "showTrends": true,
+      "showQuickStats": true,
+      "showRecentActivity": true
+    },
+    "dateFormat": "YYYY-MM-DD"
+  }
+}
