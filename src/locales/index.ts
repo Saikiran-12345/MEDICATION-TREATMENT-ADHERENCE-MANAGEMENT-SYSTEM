@@ -1,4 +1,4 @@
-// Export all translations
+// Localization dictionary exports
 export * from './lang_1';
 export * from './lang_2';
 export * from './lang_3';
